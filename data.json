@@ -77,7 +77,8 @@
         {
           "name": "服务器集群可用性",
           "desc": "本站服务器集群状态监视器",
-          "url": "https://servers.utopiaxc.com/"
+          "url": "https://servers.utopiaxc.com/",
+          "visible": false
         },
         {
           "name": "网站服务状态",
@@ -97,7 +98,8 @@
         {
           "name": "OneDrive索引站",
           "desc": "基于开放API搭建的OneDrive个人索引站",
-          "url": "https://onedrive.utopiaxc.com/"
+          "url": "https://onedrive.utopiaxc.com/",
+          "visible": false
         },
         {
           "name": "个人图床",
@@ -117,7 +119,8 @@
         {
           "name": "GitLab",
           "desc": "个人用GitLab",
-          "url": "https://git.utopiaxc.com/"
+          "url": "https://git.utopiaxc.com/",
+          "visible": false
         }
       ]
     },
@@ -139,12 +142,14 @@
         {
           "name": "USCAS股票系统",
           "desc": "毕业设计",
-          "url": "https://stock.utopiaxc.cn/"
+          "url": "https://stock.utopiaxc.cn/",
+          "visible": false
         },
         {
           "name": "EQC企业速查",
           "desc": "参赛项目，基于聚类分析的企业分类系统",
-          "url": "https://eqc.utopiaxc.cn/"
+          "url": "https://eqc.utopiaxc.cn/",
+          "visible": false
         },
         {
           "name": "MDUI Blog（演示站）",
@@ -289,7 +294,7 @@
       {
         "title": "Cloudflare",
         "url": "https://www.cloudflare.com/",
-        "img": "",
+        "img": "https://imgs.utopiaxc.cn/uploads/2026/07/16/6a57c31077b15.png",
         "visible": true
       },
       {
@@ -305,17 +310,17 @@
       {
         "title": "Uptime Kuma",
         "url": "https://uptimekuma.org/",
-        "img": "https://imgs.utopiaxc.cn/uploads/2026/05/06/69fb58f5ec98d.png"
+        "img": "https://imgs.utopiaxc.cn/uploads/2026/07/16/6a57c55351d2a.png"
       }
     ],
     "beianHTML": "<div style=\"margin:8px 0\"><a href=\"https://servers.utopiaxc.cn/\" target=\"_blank\">Server Status</a> &bull; <a href=\"https://status.utopiaxc.cn/\" target=\"_blank\">Site Status</a></div><br><img src=\"https://imgs.utopiaxc.cn/uploads/2025/07/06/686a384deedd3.png\" style=\"width:12px;vertical-align:text-bottom\" alt=\"备案\"><a href=\"https://beian.mps.gov.cn/#/query/webSearch?code=21020402000986\" rel=\"noreferrer\" target=\"_blank\">辽公网安备21020402000986号</a> | <a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow\">辽ICP备20006329号</a> | <a href=\"https://icp.gov.moe/?keyword=20251025\" target=\"_blank\">萌ICP备20251025号</a>"
   },
   "alerts": {
     "visible": true,
-    "type": "danger",
+    "type": "warning",
     "items": [
       {
-        "content": "<p><strong>[中文]</strong> 受严重漏洞 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a>（CVSS评分 9.9/10，致命级别）与 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a>（CVSS评分 9.1/10，致命级别）影响，本站集群已全部重置系统并正在进行向Cloudflare转移。部分服务在转移过程中暂时不可用，可用的服务可能存在不稳定的情况，十分抱歉。此外，强烈建议所有阅及此信息的服务器管理员立即排查该漏洞，以避免潜在损失。</p><br>\n<p><strong>[English]</strong> Due to the severe vulnerabilities <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a> (CVSS Score: 9.9/10, Critical) and <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a> (CVSS Score: 9.1/10, Critical), all systems in this site's cluster have been completely reset, and migration to Cloudflare is currently in progress. Some services may be temporarily unavailable during the migration process, and available services may experience instability. We sincerely apologize for the inconvenience. In addition, all server administrators who have read this notice are strongly advised to immediately check for these vulnerabilities to prevent potential losses.</p><br>\n<p><strong>[日本語]</strong> 深刻な脆弱性 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a>（CVSSスコア：9.9/10、緊急度：Critical）および <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a>（CVSSスコア：9.1/10、緊急度：Critical）の影響を受けたため、本サイトのクラスタ内システムはすべてリセットされ、現在Cloudflareへの移行作業を実施しております。移行作業中、一部のサービスが一時的に利用できなくなる場合があります。また、利用可能なサービスについても不安定な状態が発生する可能性があります。ご不便をおかけいたしますが、何卒ご了承ください。なお、本告知をご覧になったすべてのサーバー管理者の皆様は、潜在的な被害を防ぐため、速やかに該当脆弱性の確認および対策を実施することを強く推奨いたします。</p>",
+        "content": "<p><strong>[中文]</strong> 受严重漏洞 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a> 与 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a> 影响，部分服务中断。</p><br>\n<p><strong>[English]</strong> Due to the severe vulnerabilities <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a> and <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a>, we are currently experiencing a partial outage.</p><br>\n<p><strong>[日本語]</strong> 深刻な脆弱性 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a> および <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a> の影響を受けたため、一部のサービスが停止しています。</p>",
         "visible": true
       }
     ]
