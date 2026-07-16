@@ -15,19 +15,19 @@
     {
       "title": "开往-友链接力",
       "url": "https://www.travellings.cn/go.html",
-      "imgDay": "https://imgs.utopiaxc.cn/uploads/2024/12/21/67668c6b1a11c.png",
-      "imgNight": "https://imgs.utopiaxc.cn/uploads/2024/12/22/6767f54c466fd.png"
+      "imgDay": "https://imgs.utopiaxc.com/uploads/2024/12/21/67668c6b1a11c.png",
+      "imgNight": "https://imgs.utopiaxc.com/uploads/2024/12/22/6767f54c466fd.png"
     },
     {
       "title": "十年之约",
       "url": "https://www.foreverblog.cn/go.html",
-      "imgDay": "https://imgs.utopiaxc.cn/uploads/2024/12/21/67668d6698808.gif",
-      "imgNight": "https://imgs.utopiaxc.cn/uploads/2024/12/22/6767f5ba4b81d.gif"
+      "imgDay": "https://imgs.utopiaxc.com/uploads/2024/12/21/67668d6698808.gif",
+      "imgNight": "https://imgs.utopiaxc.com/uploads/2024/12/22/6767f5ba4b81d.gif"
     }
   ],
   "categories": [
     {
-      "name": "<a href=\"https://blog.utopiaxc.cn/\">Blog</a> & <a href=\"https://moments.utopiaxc.cn/\">Moments</a> & <a href=\"https://blog.utopiaxc.cn/about\">Me</a>",
+      "name": "<a href=\"https://blog.utopiaxc.com/\">Blog</a> & <a href=\"https://moments.utopiaxc.com/\">Moments</a> & <a href=\"https://blog.utopiaxc.com/about\">Me</a>",
       "links": [
         {
           "name": "博客",
@@ -142,24 +142,24 @@
         {
           "name": "USCAS股票系统",
           "desc": "毕业设计",
-          "url": "https://stock.utopiaxc.cn/",
+          "url": "https://stock.utopiaxc.com/",
           "visible": false
         },
         {
           "name": "EQC企业速查",
           "desc": "参赛项目，基于聚类分析的企业分类系统",
-          "url": "https://eqc.utopiaxc.cn/",
+          "url": "https://eqc.utopiaxc.com/",
           "visible": false
         },
         {
           "name": "MDUI Blog（演示站）",
           "desc": "基于MDUI的开源简易博客",
-          "url": "https://mdui-blog.utopiaxc.cn/"
+          "url": "https://mdui-blog.utopiaxc.com/"
         },
         {
           "name": "My Music Player",
           "desc": "专为博客打造的网页音乐播放器，基于Laravel，调用网易云接口",
-          "url": "https://music.utopiaxc.cn/"
+          "url": "https://music.utopiaxc.com/"
         }
       ]
     },
@@ -287,33 +287,33 @@
   "footer": {
     "copyrightYearStart": "2016",
     "copyrightName": "UtopiaXC",
-    "copyrightLink": "https://www.utopiaxc.cn/",
+    "copyrightLink": "https://www.utopiaxc.com/",
     "startDate": "2019-10-13 11:13:00",
     "showRunTime": true,
     "sponsors": [
       {
         "title": "Cloudflare",
         "url": "https://www.cloudflare.com/",
-        "img": "https://imgs.utopiaxc.cn/uploads/2026/07/16/6a57c31077b15.png",
+        "img": "https://imgs.utopiaxc.com/uploads/2026/07/16/6a57c31077b15.png",
         "visible": true
       },
       {
         "title": "阿里云",
         "url": "https://www.aliyun.com/",
-        "img": "https://imgs.utopiaxc.cn/uploads/2022/07/01/62be99dde072e.png"
+        "img": "https://imgs.utopiaxc.com/uploads/2022/07/01/62be99dde072e.png"
       },
       {
         "title": "Matomo",
         "url": "https://matomo.org/",
-        "img": "https://imgs.utopiaxc.cn/uploads/2022/07/01/62be9a389a530.webp"
+        "img": "https://imgs.utopiaxc.com/uploads/2022/07/01/62be9a389a530.webp"
       },
       {
         "title": "Uptime Kuma",
         "url": "https://uptimekuma.org/",
-        "img": "https://imgs.utopiaxc.cn/uploads/2026/07/16/6a57c55351d2a.png"
+        "img": "https://imgs.utopiaxc.com/uploads/2026/07/16/6a57c55351d2a.png"
       }
     ],
-    "beianHTML": "<div style=\"margin:8px 0\"><a href=\"https://servers.utopiaxc.cn/\" target=\"_blank\">Server Status</a> &bull; <a href=\"https://status.utopiaxc.cn/\" target=\"_blank\">Site Status</a></div><br><img src=\"https://imgs.utopiaxc.cn/uploads/2025/07/06/686a384deedd3.png\" style=\"width:12px;vertical-align:text-bottom\" alt=\"备案\"><a href=\"https://beian.mps.gov.cn/#/query/webSearch?code=21020402000986\" rel=\"noreferrer\" target=\"_blank\">辽公网安备21020402000986号</a> | <a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow\">辽ICP备20006329号</a> | <a href=\"https://icp.gov.moe/?keyword=20251025\" target=\"_blank\">萌ICP备20251025号</a>"
+    "beianHTML": "<div style=\"margin:8px 0\"><a href=\"https://servers.utopiaxc.com/\" target=\"_blank\">Server Status</a> &bull; <a href=\"https://status.utopiaxc.com/\" target=\"_blank\">Site Status</a></div><br><img src=\"https://imgs.utopiaxc.com/uploads/2025/07/06/686a384deedd3.png\" style=\"width:12px;vertical-align:text-bottom\" alt=\"备案\"><a href=\"https://beian.mps.gov.cn/#/query/webSearch?code=21020402000986\" rel=\"noreferrer\" target=\"_blank\">辽公网安备21020402000986号</a> | <a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow\">辽ICP备20006329号</a> | <a href=\"https://icp.gov.moe/?keyword=20251025\" target=\"_blank\">萌ICP备20251025号</a>"
   },
   "alerts": {
     "visible": true,
