@@ -2,7 +2,7 @@
   "meta": {
     "title": "UTOPIAXC",
     "customCSS": "",
-    "customJS": "<script>var _paq=window._paq=window._paq||[];_paq.push([\"setDocumentTitle\",document.domain+\"/\"+document.title]),_paq.push([\"setCookieDomain\",\"*.www.utopiaxc.cn\"]),_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"//matomo.utopiaxc.cn/\";_paq.push([\"setTrackerUrl\",e+\"matomo.php\"]),_paq.push([\"setSiteId\",\"1\"]);var t=document,a=t.createElement(\"script\"),o=t.getElementsByTagName(\"script\")[0];a.async=!0,a.src=e+\"matomo.js\",o.parentNode.insertBefore(a,o)}();</script>",
+    "customJS": "<!-- Matomo -->\n<script>\n  var _paq = window._paq = window._paq || [];\n  /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n  _paq.push([\"setDocumentTitle\", document.domain + \"/\" + document.title]);\n  _paq.push([\"setCookieDomain\", \"*.www.utopiaxc.cn\"]);\n  _paq.push([\"setDomains\", [\"*.www.utopiaxc.cn\",\"*.utopiaxc.github.io\",\"*.www.utopiaxc.com\"]]);\n  _paq.push([\"enableCrossDomainLinking\"]);\n  _paq.push(['trackPageView']);\n  _paq.push(['enableLinkTracking']);\n  (function() {\n    var u=\"https://matomo.utopiaxc.com/\";\n    _paq.push(['setTrackerUrl', u+'matomo.php']);\n    _paq.push(['setSiteId', '1']);\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);\n  })();\n</script>\n<!-- End Matomo Code -->\n",
     "browserTitle": "UtopiaXC HomePage"
   },
   "seo": {
@@ -305,7 +305,8 @@
       {
         "title": "Matomo",
         "url": "https://matomo.org/",
-        "img": "https://imgs.utopiaxc.com/uploads/2022/07/01/62be9a389a530.webp"
+        "img": "https://imgs.utopiaxc.com/uploads/2022/07/01/62be9a389a530.webp",
+        "visible": false
       },
       {
         "title": "Uptime Kuma",
@@ -313,14 +314,14 @@
         "img": "https://imgs.utopiaxc.com/uploads/2026/07/16/6a57c55351d2a.png"
       }
     ],
-    "beianHTML": "<div style=\"margin:8px 0\"><a href=\"https://servers.utopiaxc.com/\" target=\"_blank\">Server Status</a> &bull; <a href=\"https://status.utopiaxc.com/\" target=\"_blank\">Site Status</a></div><br><img src=\"https://imgs.utopiaxc.com/uploads/2025/07/06/686a384deedd3.png\" style=\"width:12px;vertical-align:text-bottom\" alt=\"备案\"><a href=\"https://beian.mps.gov.cn/#/query/webSearch?code=21020402000986\" rel=\"noreferrer\" target=\"_blank\">辽公网安备21020402000986号</a> | <a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow\">辽ICP备20006329号</a> | <a href=\"https://icp.gov.moe/?keyword=20251025\" target=\"_blank\">萌ICP备20251025号</a>"
+    "beianHTML": "<img src=\"https://imgs.utopiaxc.com/uploads/2025/07/06/686a384deedd3.png\" style=\"width:12px;vertical-align:text-bottom\" alt=\"备案\"><a href=\"https://beian.mps.gov.cn/#/query/webSearch?code=21020402000986\" rel=\"noreferrer\" target=\"_blank\">辽公网安备21020402000986号</a> | <a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow\">辽ICP备20006329号</a> | <a href=\"https://icp.gov.moe/?keyword=20251025\" target=\"_blank\">萌ICP备20251025号</a>"
   },
   "alerts": {
     "visible": true,
-    "type": "warning",
+    "type": "info",
     "items": [
       {
-        "content": "<p><strong>[中文]</strong> 受严重漏洞 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a> 与 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a> 影响，部分服务中断。</p><br>\n<p><strong>[English]</strong> Due to the severe vulnerabilities <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a> and <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a>, we are currently experiencing a partial outage.</p><br>\n<p><strong>[日本語]</strong> 深刻な脆弱性 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a> および <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a> の影響を受けたため、一部のサービスが停止しています。</p>",
+        "content": "<p><strong>2026/07/16 23:30</strong><br>本站服务已基本恢复。<br>建议所有使用哪吒面板作为服务器探针的用户立刻彻底移除该面板，重装系统并重设密码与密钥，受漏洞 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a> 与 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a> 影响，哪吒面板遭到大规模挂马。</p>",
         "visible": true
       }
     ]
