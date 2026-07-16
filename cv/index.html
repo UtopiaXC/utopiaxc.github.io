@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!-- This page is helped by AI Gemini. If there is any infringement, please contact me immediately -->
+<!-- 本页面由AI Gemini帮助完成，如果任何地方存在侵权，请立即联系我 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="darkreader-lock">
+
+    <title data-i18n-key="page_title">Yusen Du - Personal Academic Homepage</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(["setCookieDomain", "*.cv.utopiaxc.cn"]);
+        _paq.push(["setDomains", ["*.cv.utopiaxc.cn", "*.academic.utopiaxc.com", "*.cv.utopiaxc.com", "*.resume.utopiaxc.com"]]);
+        _paq.push(["enableCrossDomainLinking"]);
+        _paq.push(["setDoNotTrack", true]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//matomo.utopiaxc.cn/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '26']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+
+    <script>
+        (function () {
+            const userTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (userTheme === 'dark' || (!userTheme && systemPrefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+<body>
+<header class="navbar">
+    <div class="container">
+        <a href="#about" class="navbar-brand">Yusen Du</a>
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link" data-i18n-key="nav_about">About</a></li>
+            <li><a href="#experience" class="nav-link" data-i18n-key="nav_experience">Experience</a></li>
+            <li><a href="#research" class="nav-link" data-i18n-key="nav_research">Research</a></li>
+            <!--<li><a href="#publications" class="nav-link" data-i18n-key="nav_papers">Papers</a></li>-->
+            <li><a href="#work-experience" class="nav-link" data-i18n-key="nav_works">Works</a></li>
+            <li><a href="#personal-projects" class="nav-link" data-i18n-key="nav_projects">Projects</a></li>
+            <li><a href="#contact" class="nav-link" data-i18n-key="nav_contact">Contact</a></li>
+
+            <li class="language-switcher">
+                <button id="lang-switcher-button">
+                    <i class="fas fa-globe"></i>
+                    <span id="current-lang">EN</span>
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <ul id="lang-switcher-menu">
+                    <li data-lang="en">English</li>
+                    <li data-lang="zh">中文</li>
+                    <li data-lang="ja">日本語</li>
+                </ul>
+            </li>
+
+            <li>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
+                    <i class="fas fa-moon fa-fw"></i>
+                    <i class="fas fa-sun fa-fw"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <img src="assets/images/head_photo.webp" alt="Yusen Du's Photo" class="about-photo">
+                <div class="about-text">
+                    <h1 data-i18n-key="about_name">Yusen Du</h1>
+                    <p class="title" data-i18n-key="about_title">Master of Engineering, Information System, University
+                        of Tsukuba</p>
+                    <p class="bio" data-i18n-key="about_bio">
+                        Hi there, I am from Dalian, China, you can also call me UtopiaXC. I previously worked as a
+                        Senior Engineer at a listed automotive provider, where I led a team in the development of
+                        vehicle systems. Currently, I am pursuing a Master of Engineering in Information Systems at the
+                        University of Tsukuba, Japan.
+
+                        My research focuses on Agent-Based Modeling (ABM) and Evolutionary Computation (EC). I am
+                        currently collaborating with Johns Hopkins University on an infectious disease simulation model
+                        for the World Health Organization. Additionally, I am researching the application of ABM and EC
+                        in economy systems to simulate assets market fluctuations caused by macroeconomic regulation
+                        policies, with the goal of reverse-iterating to find out more effective economic policies.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.utopiaxc.cn/" data-tooltip="Homepage" target="_blank"><i
+                                class="fa-solid fa-house"></i></a>
+                        <a href="mailto:utopiaxc@utopiaxc.com" data-tooltip="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/UtopiaXC" data-tooltip="GitHub" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/duyusen/" data-tooltip="LinkedIn" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 data-i18n-key="experience_title">Experience</h2>
+            <div class="experience-cards">
+                <div class="card">
+                    <a href="https://www.tsukuba.ac.jp/" target="_blank">
+                        <img src="assets/images/university_of_tsukuba_logo.webp" alt="University of Tsukuba Logo"
+                             class="card-logo">
+                    </a>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3 data-i18n-key="experience_master_title">Master of Engineering</h3>
+                                <a href="https://www.tsukuba.ac.jp/" target="_blank">
+                                    <p class="card-location" data-i18n-key="experience_master_institution">Information
+                                        System, University of Tsukuba</p>
+                                </a>
+                            </div>
+                            <span class="card-date">2026.04 ~</span>
+                        </div>
+
+                        <p class="card-description" data-i18n-key="experience_master_description">Focusing on the
+                            application of ABM and EC in economy systems to simulate assets market fluctuations caused
+                            by macroeconomic regulation policies, with the goal of reverse-iterating to find out more
+                            effective economic policies.</p>
+                        <a href="https://conclave.cs.tsukuba.ac.jp/" target="_blank">
+                            <blockquote class="card-department" data-i18n-key="experience_master_department">Laboratory
+                                of Evolutionary Computation
+                            </blockquote>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="https://www.tsukuba.ac.jp/" target="_blank">
+                        <img src="assets/images/university_of_tsukuba_logo.webp" alt="University of Tsukuba Logo"
+                             class="card-logo">
+                    </a>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3 data-i18n-key="experience_research_student_title">Research Student of
+                                    Engineering</h3>
+                                <a href="https://www.tsukuba.ac.jp/" target="_blank">
+                                    <p class="card-location" data-i18n-key="experience_research_student_institution">
+                                        Information System, University of Tsukuba</p>
+                                </a>
+                            </div>
+                            <span class="card-date">2025.04 ~ 2026.03</span>
+                        </div>
+                        <p class="card-description" data-i18n-key="experience_research_student_description">Focusing on
+                            building a general ABM framework that can be used to simulate any scenario that occurs in
+                            real maps, especially infectious disease. We are collaborating with Johns Hopkins University
+                            to build an infectious disease simulation model as well.</p>
+                        <a href="https://conclave.cs.tsukuba.ac.jp/" target="_blank">
+                            <blockquote class="card-department" data-i18n-key="experience_research_student_department">
+                                Laboratory of Evolutionary Computation
+                            </blockquote>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="https://en.thundersoft.com/" target="_blank">
+                        <img src="assets/images/thundersoft_logo.webp" alt="ThunderSoft Logo" class="card-logo">
+                    </a>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3 data-i18n-key="experience_thundersoft_title">Senior Software Engineer</h3>
+                                <a href="https://en.thundersoft.com/" target="_blank">
+                                    <p class="card-location" data-i18n-key="experience_thundersoft_institution">Thunder
+                                        Software Technology Co., Ltd.</p>
+                                </a>
+                            </div>
+                            <span class="card-date">2022.07 ~ 2024.04</span>
+                        </div>
+                        <p class="card-description" data-i18n-key="experience_thundersoft_description">Took charge of
+                            Android Auto module which is a part of smart vehicle connectivity. Lead team to form a set
+                            of firm's platform assets as a product. Participated in the development of corresponding
+                            modules for different enterprise including Geely, BYD, Panasonic Automotive (for Mazda) and
+                            so on.<br>Worked for development about Android Power module for smart vehicles with
+                            understanding of associated professional knowledge. Could done works independently and
+                            already done few projects for well-known enterprises including DFMC, Alpine, etc.</p>
+                        <a href="https://en.thundersoft.com/smart-cockpit-platforms/" target="_blank">
+                            <blockquote class="card-department" data-i18n-key="experience_thundersoft_department">
+                                Department 2, development center, BG of smart vehicle.
+                            </blockquote>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="https://www.suntray.com/" target="_blank">
+                        <img src="assets/images/suntray_logo.webp" alt="Suntray Logo" class="card-logo">
+                    </a>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3 data-i18n-key="experience_suntray_title">Intern Software Engineer for backend</h3>
+                                <a href="https://www.suntray.com/" target="_blank">
+                                    <p class="card-location" data-i18n-key="experience_suntray_institution">Beijing
+                                        Suntray
+                                        Software Technology Co., Ltd.</p>
+                                </a>
+                            </div>
+                            <span class="card-date">2021.06 ~ 2021.12</span>
+                        </div>
+                        <p class="card-description" data-i18n-key="experience_suntray_description">Work as a backend
+                            engineer for a medical information archive system with big data analysis witch is built by
+                            Spring and take a part of developing independently.<br>Participated in the product design
+                            witch is about health management and worked as a backend engineer for SpringCloud
+                            development.<br>Participated in the open capabilities platform design and develop the
+                            platform using PHP Laravel as web framework and Python as data acquisition and analysis for
+                            supporting other projects with big data capabilities.</p>
+                        <a href="https://www.suntray.com/" target="_blank">
+                            <blockquote class="card-department" data-i18n-key="experience_suntray_department">Software
+                                Development Department
+                            </blockquote>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="https://new.dlnu.edu.cn/" target="_blank">
+                        <img src="assets/images/dlnu_logo.webp" alt="DLNU Logo" class="card-logo">
+                    </a>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-title-group">
+                                <h3 data-i18n-key="experience_bachelor_title">Bachelor of Engineering</h3>
+                                <a href="https://new.dlnu.edu.cn/" target="_blank">
+                                    <p class="card-location" data-i18n-key="experience_bachelor_institution">Computer
+                                        Science, Dalian Minzu University</p>
+                                </a>
+                            </div>
+                            <span class="card-date">2018.09 ~ 2022.06</span>
+                        </div>
+                        <p class="card-description" data-i18n-key="experience_bachelor_description">Studied the
+                            fundamentals of Computer Science. Participated and placed in various competitions.
+                            Participated in studies at multiple research laboratory.</p>
+                        <a href="https://new.dlnu.edu.cn/comd/" target="_blank">
+                            <blockquote class="card-department" data-i18n-key="experience_bachelor_department">School of
+                                Computer Science and Engineering
+                            </blockquote>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="container">
+            <h2 data-i18n-key="research_title">Research</h2>
+            <div class="research-grid">
+                <div class="project-card">
+                    <h3 data-i18n-key="research_ec_in_economic_title">Policy Optimization in Stock Market: An
+                        Agent-Based Model Approach Integrating Evolutionary Computation</h3>
+                    <p data-i18n-key="research_ec_in_economic_description">This research propose the development of an
+                        agent-based model in which the agents represent market participants who react differently to
+                        such policies. Through this model, governments can better predict the outcome of policies and
+                        formulate more effective policies.</p>
+                    <div class="project-links">
+                        <a href="./assets/documents/Research_Proposal.pdf" target="_blank"><span
+                                data-i18n-key="common_research_proposal">Research Proposal</span> <i
+                                class="fa-solid fa-book"></i></a>
+                        <!--<a href="./assets/documents/Zemi_DuYusen_20250625.pdf" target="_blank"><span-->
+                        <!--        data-i18n-key="slides_policy_optimization_research_slides_general">Slides (General)</span> <i class="fa-solid fa-file-powerpoint"></i></a>-->
+                        <!-- <a href="./assets/documents/Zemi_DuYusen_20251203.pdf" target="_blank"><span-->
+                        <!--        data-i18n-key="slides_policy_optimization_research_slides_simulation">Slides (Simulation)</span> <i class="fa-solid fa-file-powerpoint"></i></a>-->
+                        <a href="./assets/documents/Zemi_DuYusen_20260520.pdf" target="_blank"><span
+                                data-i18n-key="slides_policy_optimization_research_slides_interim">Slides (Interim)</span> <i class="fa-solid fa-file-powerpoint"></i></a>
+                        <a href="https://github.com/UtopiaXC/Utopia-Assets-Market-Simulation" target="_blank"><span
+                                data-i18n-key="common_code">Code</span> <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 data-i18n-key="research_koudou_title">Koudou Next: A general ABM framework based on real
+                        maps.</h3>
+                    <p data-i18n-key="research_koudou_description">We are working on building a general ABM framework
+                        that can be used to simulate any scenario that occurs in real maps, especially infectious
+                        disease. We are collaborating with Johns Hopkins University to build an infectious disease
+                        simulation model as well.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/UtopiaXC/Koudou-Next" target="_blank"><span
+                                data-i18n-key="common_code">Code</span> <i class="fa-brands fa-github"></i></a>
+                        <a href="https://air.tsukuba.ac.jp/en/research/collaboration/jhu-tsukuba-collaboration-on-contagion-simulation/"
+                           target="_blank"><span data-i18n-key="common_homepage">Homepage</span> <i
+                                class="fa-solid fa-home"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section id="publications">-->
+    <!--    <div class="container">-->
+    <!--        <h2 data-i18n-key="papers_title">Papers</h2>-->
+    <!--        <ul class="publication-list">-->
+    <!--            <li class="publication-item">-->
+    <!--                <p class="title"><strong>基于Laravel的网络股评分析研究及应用</strong></p>-->
+    <!--                <p class="authors"><span class="me">Yusen Du</span></p>-->
+    <!--                <p class="venue" data-i18n-key="paper_graduation_paper_for_bachelor_description">Unpublished, with-->
+    <!--                    no English title. Graduation paper for bachelor degree. </p>-->
+    <!--                <div class="pub-links">-->
+    <!--                    <a target="_blank"-->
+    <!--                       href="/assets/documents/论文：基于Laravel的网络股评分析研究及应用.pdf">[PDF]</a>-->
+    <!--                    <a target="_blank" data-i18n-key="common_slides_bracket"-->
+    <!--                       href="/assets/documents/演示文稿：基于Laravel的网络股评分析研究及应用.pdf">[Slides]</a>-->
+    <!--                </div>-->
+    <!--            </li>-->
+    <!--            <li class="publication-item">-->
+    <!--                <p class="title"><strong>文献综述：传染病动力学模型的相关研究与实际应用</strong></p>-->
+    <!--                <p class="authors"><span class="me">Yusen Du</span></p>-->
+    <!--                <p class="venue" data-i18n-key="paper_literature_review_course_description">Unpublished, with no-->
+    <!--                    English title. Final paper for the literature review course. Introduces some models of-->
+    <!--                    infectious disease dynamics.</p>-->
+    <!--                <div class="pub-links">-->
+    <!--                    <a target="_blank" href="/assets/documents/传染病动力学模型的相关研究与实际应用.pdf">[PDF]</a>-->
+    <!--                </div>-->
+    <!--            </li>-->
+    <!--        </ul>-->
+    <!--    </div>-->
+    <!--</section>-->
+
+    <section id="work-experience">
+        <div class="container">
+            <h2 data-i18n-key="work_experience_title">Work Experience</h2>
+            <div class="research-grid">
+                <div class="project-card">
+                    <h3 data-i18n-key="work_experience_honda_title">Android Auto For Honda</h3>
+                    <p class="project-meta">
+                        <span data-i18n-key="work_experience_honda_institution">ThunderSoft</span> | <span>2023.10 ~ 2024.04</span>
+                    </p>
+                    <p data-i18n-key="work_experience_honda_description">Involved in the project starting up and
+                        proposal phase, play roles in product defining and designing, leading the team in developing the
+                        Android Auto, including documentation, coding, testing, and validation. Additionally, took
+                        charge in overall project planning and progress management, overseeing Connectivity modules like
+                        CarPlay and iPod. Built a certification platform, pushed project certification progress, and
+                        ensured project quality and delivery.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Android Framework</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Smart Vehicle</span>
+                        <span class="tech-tag">Android Auto</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 data-i18n-key="work_experience_geely_title">Smart Vehicle Connectivity Project for Geely</h3>
+                    <p class="project-meta">
+                        <span data-i18n-key="work_experience_geely_institution">ThunderSoft</span> | <span>2023.02 ~ 2024.10</span>
+                    </p>
+                    <p data-i18n-key="work_experience_geely_description">Participated in the development of the Android
+                        Auto module for Geely Middle East vehicles, gaining a deep understanding of Android Auto.
+                        Studied Google HUIG. Involved in vehicle integration, bugfix, and certification support
+                        processes.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Android Framework</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Smart Vehicle</span>
+                        <span class="tech-tag">Android Auto</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 data-i18n-key="work_experience_dfmc_title">Power Module of Android for DFMC</h3>
+                    <p class="project-meta">
+                        <span data-i18n-key="work_experience_dfmc_institution">ThunderSoft</span> | <span>2022.07 ~ 2022.12</span>
+                    </p>
+                    <p data-i18n-key="work_experience_dfmc_description">Participated in the development and
+                        documentation of the Android power module for DFMC's vehicles for passenger and police.
+                        Completed project functionalities based on PRD and wrote project architecture and interface
+                        documents that received accreditation. Successfully matched project timelines, ensured timely
+                        delivery and on market.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Android Framework</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Smart Vehicle</span>
+                        <span class="tech-tag">Power Management</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 data-i18n-key="work_experience_medical_platform_title">Archiving and big data platform for The
+                        General Hospital of NORINCO</h3>
+                    <p class="project-meta">
+                        <span data-i18n-key="work_experience_medical_platform_institution">Suntray</span> | <span>2021.06 ~ 2021.10</span>
+                    </p>
+                    <p data-i18n-key="work_experience_medical_platform_description">Studied SpringCloud and participate
+                        in project development. Took a part in backend interfaces defining, developing, and debugging,
+                        successfully done the work and ensured the timeline.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Backend</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="personal-projects">
+        <div class="container">
+            <h2 data-i18n-key="personal_projects_title">Personal Projects</h2>
+            <div class="research-grid">
+                <div class="project-card">
+                    <h3>Theme Dear For Typecho</h3>
+                    <p data-i18n-key="personal_projects_theme_dear_description">A blog theme for Typecho and forked by
+                        Dear. </p>
+                    <div class="project-links">
+                        <a href="https://github.com/UtopiaXC/Theme-Dear-For-Typecho" target="_blank"><span
+                                data-i18n-key="common_code">Code</span> <i class="fa-brands fa-github"></i></a>
+                        <a href="https://blog.utopiaxc.cn/" target="_blank"><span
+                                data-i18n-key="common_demo">Demo</span> <i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Utopia Server Status</h3>
+                    <p data-i18n-key="personal_projects_utopia_server_description">An Android application for
+                        ServerStatus-Hotaru.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/UtopiaXC/Utopia-Server-Status" target="_blank"><span
+                                data-i18n-key="common_code">Code</span> <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 data-i18n-key="contact_title">Get In Touch</h2>
+            <div class="language-card">
+                <h3 data-i18n-key="language_title">Languages</h3>
+                <ul>
+                    <li><span data-i18n-key="language_chinese_name">Chinese</span><span class="level"
+                                                                                        data-i18n-key="language_chinese_level">Native</span>
+                    </li>
+                    <li><span data-i18n-key="language_english_name">English</span><span class="level"
+                                                                                        data-i18n-key="language_english_level">TOEIC 750</span>
+                    </li>
+                    <li><span data-i18n-key="language_japanese_name">Japanese</span><span class="level"
+                                                                                          data-i18n-key="language_japanese_level">JLPT N2</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-content">
+                <p><a href="mailto:utopiaxc@utopiaxc.com">utopiaxc@utopiaxc.com</a></p>
+                <p data-i18n-key="contact_text">If you have any questions or anything you would like to discuss, please
+                    contact me at the email address above.<br>Or you can access homepages of my laboratory or labmates.
+                </p>
+                <p></p>
+                <a href="https://conclave.cs.tsukuba.ac.jp/" target="_blank">Laboratory of Evolutionary
+                    Computation</a><br><a href="https://mslima.phd/" target="_blank">Matheus</a> · <a
+                    href="https://non4to.github.io/" target="_blank">Felipe</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>This is a static page developed by UtopiaXC with Gemini.</p>
+        <p>Copyright &copy; 2016-<span id="current-year"></span> <a href="https://www.utopiaxc.cn/" target="_blank">UtopiaXC</a>.
+            All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

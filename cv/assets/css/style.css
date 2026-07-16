@@ -1,0 +1,301 @@
+/*
+This page is helped by AI Gemini. If there is any infringement, please contact me immediately
+本页面由AI Gemini帮助完成，如果任何地方存在侵权，请立即联系我
+ */
+
+/* --- Google Fonts & FontAwesome --- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+/* --- 颜色变量 (浅色模式为默认) --- */
+:root {
+    color-scheme: light;
+    --primary-color: #0056b3;
+    --secondary-color: #333;
+    --bg-color: #ffffff;
+    --section-bg-color: #f8f9fa;
+    --border-color: #dee2e6;
+    --header-bg-color: rgba(255, 255, 255, 0.95);
+    --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    --tooltip-bg: #333;
+    --tooltip-text: #fff;
+}
+
+/* --- 深色模式颜色变量 --- */
+html.dark-mode {
+    color-scheme: dark;
+    --primary-color: #4dabf7;
+    --secondary-color: #e0e0e0;
+    --bg-color: #1a1a1a;
+    --section-bg-color: #242424;
+    --border-color: #444;
+    --header-bg-color: rgba(26, 26, 26, 0.85);
+    --card-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    --tooltip-bg: #f1f3f5;
+    --tooltip-text: #121212;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+    transition: background-color 0.3s ease;
+}
+
+main > section:nth-of-type(odd) {
+    background-color: var(--bg-color);
+}
+main > section:nth-of-type(even) {
+    background-color: var(--section-bg-color);
+}
+
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+h2 { text-align: center; font-size: 2.2rem; color: var(--primary-color); }
+
+/* --- 导航栏 & 主题切换 & 语言切换 --- */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--header-bg-color);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.navbar .container { display: flex; justify-content: space-between; align-items: center; height: 100%; }
+.navbar-brand { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--secondary-color); text-decoration: none; }
+.nav-links { list-style: none; display: flex; align-items: center; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: var(--secondary-color); font-weight: 700; transition: color 0.3s ease; }
+.nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+
+.theme-toggle {
+    background: none; border: 0px solid var(--border-color); border-radius: 5px; cursor: pointer;
+    font-size: 1.2rem; color: var(--secondary-color); padding: 5px;
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.theme-toggle .fa-sun { display: none; }
+.theme-toggle .fa-moon { display: block; }
+html.dark-mode .theme-toggle .fa-sun { display: block; }
+html.dark-mode .theme-toggle .fa-moon { display: none; }
+
+.language-switcher {
+    position: relative;
+}
+#lang-switcher-button {
+    background: none; border: 1px solid var(--border-color); border-radius: 5px; cursor: pointer;
+    color: var(--secondary-color); padding: 8px 12px; font-family: 'Lato', sans-serif;
+    font-weight: 700; display: flex; align-items: center; gap: 8px;
+}
+#lang-switcher-button .fa-caret-down {
+    font-size: 0.9em;
+    transition: transform 0.2s ease-in-out;
+}
+#lang-switcher-button.active .fa-caret-down {
+    transform: rotate(180deg);
+}
+#lang-switcher-menu {
+    display: none;
+    position: absolute; top: 120%; right: 0; background-color: var(--bg-color);
+    border: 1px solid var(--border-color); border-radius: 5px; list-style: none;
+    padding: 5px 0; min-width: 100px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1100;
+}
+#lang-switcher-menu.show {
+    display: block;
+}
+#lang-switcher-menu li {
+    padding: 8px 15px; cursor: pointer; transition: background-color 0.2s; margin: 0;
+}
+#lang-switcher-menu li:hover {
+    background-color: var(--section-bg-color);
+}
+
+/* --- About Section & 图标提示 --- */
+#about { padding-top: 60px; }
+.about-grid { display: grid; grid-template-columns: 180px 1fr; gap: 40px; align-items: flex-start; }
+.about-photo { width: 100%; border-radius: 8px; border: 3px solid var(--border-color); }
+.about-text h1 { font-size: 2.5rem; margin-bottom: 5px; }
+.about-text .title { font-size: 1.1rem; color: #888; margin-bottom: 20px; }
+.about-text .bio { margin-bottom: 20px; }
+.social-icons a { position: relative; color: var(--secondary-color); font-size: 1.5rem; margin-right: 20px; transition: color 0.3s ease; }
+.social-icons a:hover { color: var(--primary-color); }
+.social-icons a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--tooltip-bg);
+    color: var(--tooltip-text);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    z-index: 10;
+}
+.social-icons a:hover::after { opacity: 1; visibility: visible; }
+
+/* --- Experience Section 卡片 --- */
+.experience-cards { display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 800px; margin: 40px auto 0; }
+.card {
+    background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: grid; grid-template-columns: 50px 1fr; gap: 20px; align-items: flex-start;
+}
+.card:hover { transform: translateY(-5px); box-shadow: var(--card-shadow); }
+.card-logo { width: 50px; height: 50px; border-radius: 50%; border: 1px solid var(--border-color); object-fit: contain; }
+.card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; margin-bottom: 10px; }
+.card-title-group h3 { font-size: 1.1rem; color: var(--primary-color); margin: 0 0 4px 0; }
+.card-location { font-size: 0.95rem; color: #888; font-weight: bold; }
+.card-date { font-weight: bold; color: #888; font-size: 0.9rem; white-space: nowrap; }
+.card-description { font-size: 0.9rem; color: #666; margin-bottom: 15px; }
+html.dark-mode .card-location, html.dark-mode .card-date, html.dark-mode .card-description { color: #aaa; }
+.card-department { margin: 0; padding-left: 15px; border-left: 3px solid var(--primary-color); font-size: 0.85rem; color: #777; }
+html.dark-mode .card-department { color: #999; }
+
+/* --- Research & Projects Section --- */
+.research-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.project-card {
+    background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 25px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.project-card:hover { transform: translateY(-5px); box-shadow: var(--card-shadow); }
+.project-card h3 { color: var(--primary-color); }
+.project-links a { text-decoration: none; font-weight: bold; color: var(--primary-color); margin-right: 15px; }
+.project-links {
+    margin-top: auto;
+    padding-top: 20px;
+}
+.project-meta {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #888;
+    margin: -10px 0 15px 0;
+}
+html.dark-mode .project-meta {
+    color: #aaa;
+}
+.tech-stack {
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+.tech-tag {
+    display: inline-block;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    margin: 3px 5px 3px 0;
+}
+
+/* --- Publications Section --- */
+.publication-list { list-style: none; }
+.publication-item { margin-bottom: 25px; padding-left: 20px; border-left: 3px solid var(--primary-color); }
+.publication-item .authors .me { font-weight: bold; }
+.publication-item .venue { font-weight: bold; color: #555; }
+html.dark-mode .publication-item .venue { color: #bbb; }
+.publication-item .pub-links a { text-decoration: none; font-weight: bold; color: var(--primary-color); margin-right: 10px; }
+
+/* --- Contact Section & 语言卡片 --- */
+#contact { text-align: center; }
+.contact-content p { font-size: 1.1rem; margin-top: 30px; }
+.language-card {
+    max-width: 400px; margin: 0 auto; background: var(--section-bg-color);
+    border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; text-align: left;
+}
+.language-card h3 { text-align: center; margin-bottom: 15px; color: var(--primary-color); }
+.language-card ul { list-style: none; padding: 0; }
+.language-card li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-color); }
+.language-card li:last-child { border-bottom: none; }
+.language-card .level { color: #888; }
+html.dark-mode .language-card .level { color: #aaa; }
+
+/* --- 页尾样式 --- */
+.site-footer {
+    background-color: var(--section-bg-color);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    border-top: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.site-footer p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+.site-footer a {
+    color: inherit; /* 颜色继承父元素，保持低调 */
+    text-decoration: none; /* 移除默认的实线下划线 */
+    border-bottom: 1px dotted; /* 使用一个微妙的虚线边框来标示链接 */
+    padding-bottom: 1px; /* 微调边框与文字的距离 */
+    transition: color 0.2s ease, border-bottom-style 0.2s ease; /* 平滑过渡效果 */
+}
+.site-footer a:hover {
+    color: var(--primary-color); /* 鼠标悬浮时变为主题色 */
+    border-bottom-style: solid; /* 虚线变为实线，提供清晰的交互反馈 */
+}
+html.dark-mode .site-footer {
+    color: #aaa;
+}
+
+.card a {
+    color: var(--primary-color); /* 链接默认使用主题色 */
+    text-decoration: none; /* 移除浏览器默认的下划线 */
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+/* --- 响应式设计 --- */
+@media (max-width: 768px) {
+    .nav-links > li:not(:nth-last-child(-n+2)) {
+        display: none;
+    }
+    .about-grid { grid-template-columns: 1fr; text-align: center; }
+    .about-photo { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin: 0 auto 20px; }
+    .social-icons { justify-content: center; display: flex; }
+    .card-header { flex-direction: column; align-items: flex-start; }
+    .card-date { margin-top: 5px; }
+}
