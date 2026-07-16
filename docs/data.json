@@ -48,6 +48,12 @@
           "name": "学术&简历",
           "desc": "学术主页&个人简历",
           "url": "https://cv.utopiaxc.com/"
+        },
+        {
+          "name": "留言板",
+          "desc": "畅所欲言",
+          "url": "https://blog.utopiaxc.com/comments",
+          "visible": true
         }
       ]
     },
