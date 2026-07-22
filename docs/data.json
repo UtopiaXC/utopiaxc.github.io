@@ -2,7 +2,7 @@
   "meta": {
     "title": "UTOPIAXC",
     "customCSS": "",
-    "customJS": "<!-- Matomo -->\n<script>\n  var _paq = window._paq = window._paq || [];\n  /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n  _paq.push([\"setDocumentTitle\", document.domain + \"/\" + document.title]);\n  _paq.push([\"setCookieDomain\", \"*.www.utopiaxc.cn\"]);\n  _paq.push([\"setDomains\", [\"*.www.utopiaxc.cn\",\"*.utopiaxc.github.io\",\"*.www.utopiaxc.com\"]]);\n  _paq.push([\"enableCrossDomainLinking\"]);\n  _paq.push(['trackPageView']);\n  _paq.push(['enableLinkTracking']);\n  (function() {\n    var u=\"https://matomo.utopiaxc.com/\";\n    _paq.push(['setTrackerUrl', u+'matomo.php']);\n    _paq.push(['setSiteId', '1']);\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);\n  })();\n</script>\n<!-- End Matomo Code -->\n",
+    "customJS": "<script defer src=\"https://umami.utopiaxc.com/script.js\" data-website-id=\"894ddd3d-5945-4c8d-b306-ffaf4ca3cdac\"></script>",
     "browserTitle": "UtopiaXC HomePage"
   },
   "seo": {
