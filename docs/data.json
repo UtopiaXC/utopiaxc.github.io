@@ -134,6 +134,12 @@
       "name": "UtopiaXC个人项目",
       "links": [
         {
+          "name": "Utopia Watermark",
+          "desc": "给你的摄影作品打上水印吧",
+          "url": "https://watermark.utopiaxc.com/",
+          "visible": true
+        },
+        {
           "name": "Utopia Music",
           "desc": "B站第三方纯音频客户端",
           "url": "https://github.com/UtopiaXC/UtopiaMusic",
