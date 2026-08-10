@@ -93,8 +93,8 @@
         },
         {
           "name": "站长统计",
-          "desc": "基于Matomo搭建的个人统计站",
-          "url": "https://matomo.utopiaxc.com/"
+          "desc": "基于Umami搭建的个人统计站",
+          "url": "https://umami.utopiaxc.com/"
         },
         {
           "name": "个人网盘",
