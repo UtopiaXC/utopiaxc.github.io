@@ -5,18 +5,18 @@ window.DashboardConfiguration = {
     "dataSources": [
         {
             "sourceType": "kuma-server",
-            "sourceName": "Kuma - JP TSUKUBA",
+            "sourceName": "Kuma - CN DALIAN",
             "refreshInterval": 300,
-            "announcement": "Kuma - JP TSUKUBA 节点使用 [Uptime Kuma](https://uptimekuma.org/) 作为探针，运行于日本茨城县筑波市的服务器上。  \n本节点用于监控由海外发出的请求是否可达。  ",
-            "serverUrl": "https://jp-kuma.utopiaxc.com",
+            "announcement": "Kuma - CN DALIAN 节点使用 [Uptime Kuma](https://uptimekuma.org/) 作为探针，运行于中国辽宁省大连市的服务器上。  \n本节点用于监控由中国大陆发出的请求是否可达。  \n**本节点为备用节点，但由于筑波节点暂不可用，因此将本节点放于首页**",
+            "serverUrl": "https://cn-kuma.utopiaxc.com",
             "rangeDays": 7
         },
         {
             "sourceType": "kuma-server",
-            "sourceName": "Kuma - CN DALIAN",
+            "sourceName": "Kuma - JP TSUKUBA",
             "refreshInterval": 300,
-            "announcement": "Kuma - CN DALIAN 节点使用 [Uptime Kuma](https://uptimekuma.org/) 作为探针，运行于中国辽宁省大连市的服务器上。  \n本节点用于监控由中国大陆发出的请求是否可达。  \n**受到其他软件严重漏洞影响，本监控服务器已暂时停机，恢复时间待定**",
-            "serverUrl": "https://cn-kuma.utopiaxc.com",
+            "announcement": "Kuma - JP TSUKUBA 节点使用 [Uptime Kuma](https://uptimekuma.org/) 作为探针，运行于日本茨城县筑波市的服务器上。  \n本节点用于监控由海外发出的请求是否可达。  \n**由于筑波发生停电，导致主路由关闭，且忘记设置来电自动启动，因此本节点暂时无法访问，需等我回到日本后重启主路由方可恢复**",
+            "serverUrl": "https://jp-kuma.utopiaxc.com",
             "rangeDays": 7
         },
         {

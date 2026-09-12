@@ -329,7 +329,7 @@
     "beianHTML": "<img src=\"https://imgs.utopiaxc.com/uploads/2025/07/06/686a384deedd3.png\" style=\"width:12px;vertical-align:text-bottom\" alt=\"备案\"><a href=\"https://beian.mps.gov.cn/#/query/webSearch?code=21020402000986\" rel=\"noreferrer\" target=\"_blank\">辽公网安备21020402000986号</a> | <a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow\">辽ICP备20006329号</a> | <a href=\"https://icp.gov.moe/?keyword=20251025\" target=\"_blank\">萌ICP备20251025号</a>"
   },
   "alerts": {
-    "visible": true,
+    "visible": false,
     "type": "info",
     "items": [
       {
