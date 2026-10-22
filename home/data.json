@@ -329,11 +329,11 @@
     "beianHTML": "<img src=\"https://imgs.utopiaxc.com/uploads/2025/07/06/686a384deedd3.png\" style=\"width:12px;vertical-align:text-bottom\" alt=\"备案\"><a href=\"https://beian.mps.gov.cn/#/query/webSearch?code=21020402000986\" rel=\"noreferrer\" target=\"_blank\">辽公网安备21020402000986号</a> | <a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" rel=\"nofollow\">辽ICP备20006329号</a> | <a href=\"https://icp.gov.moe/?keyword=20251025\" target=\"_blank\">萌ICP备20251025号</a>"
   },
   "alerts": {
-    "visible": false,
-    "type": "info",
+    "visible": true,
+    "type": "warning",
     "items": [
       {
-        "content": "<p><strong>2026/07/16 23:30</strong><br>本站服务已基本恢复。<br>建议所有使用哪吒面板作为服务器探针的用户立刻彻底移除该面板，重装系统并重设所有个人密码，弃用所有SSH密钥并重新生成。受漏洞 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-46716\" target=\"_blank\">CVE-2026-46716</a> 与 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-53519\" target=\"_blank\">CVE-2026-53519</a> 影响，哪吒面板遭到大规模挂马。</p>",
+        "content": "<p><strong>2026/10/22 22:51</strong><br>受严重漏洞 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-109618\" target=\"_blank\">CVE-2026-109618</a> 与 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-109619\" target=\"_blank\">CVE-2026-109619</a> 影响，本站PHP服务已升至最新。但由于“Ink笔墨”与“图床”站点采用的是开源工具且无法支持最新PHP版本，因此目前这两个站点处于宕机状态。<br>另外，郑重提醒所有站长朋友，立即检查这两个漏洞与你当前使用的PHP版本，如果处于影响范围内请立即停止PHP服务并将其升级至最新。</p>",
         "visible": true
       }
     ]
