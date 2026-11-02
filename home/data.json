@@ -42,7 +42,8 @@
         {
           "name": "Ink笔墨",
           "desc": "文字小站",
-          "url": "https://ink.utopiaxc.com/"
+          "url": "https://ink.utopiaxc.com/",
+          "visible": false
         },
         {
           "name": "学术&简历",
@@ -330,10 +331,10 @@
   },
   "alerts": {
     "visible": true,
-    "type": "warning",
+    "type": "success",
     "items": [
       {
-        "content": "<p><strong>2026/10/22 22:51</strong><br>受严重漏洞 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-109618\" target=\"_blank\">CVE-2026-109618</a> 与 <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2026-109619\" target=\"_blank\">CVE-2026-109619</a> 影响，本站PHP服务已升至最新。但由于“Ink笔墨”与“图床”站点采用的是开源工具且无法支持最新PHP版本，因此目前这两个站点处于宕机状态。<br>另外，郑重提醒所有站长朋友，立即检查这两个漏洞与你当前使用的PHP版本，如果处于影响范围内请立即停止PHP服务并将其升级至最新。</p>",
+        "content": "<p><strong>2026/11/02 13:56</strong><br><br>全新图床系统<a href=\"https://github.com/UtopiaXC/UtopiaImages\" target=\"_blank\">Utopia Images</a>正式发布，欢迎体验。</p>",
         "visible": true
       }
     ]
